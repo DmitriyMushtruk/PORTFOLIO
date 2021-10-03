@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.iconTheme": "vscode-icons",
+    "git.autofetch": true,
+    "sass.andStared": [
+        
+
+        "active",
+        "focus",
+        "hover",
+        "nth-child"
+    ],
+    
+    "liveSassCompile.settings.autoprefix": [],
+
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/src/css"
+        },
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/src/css"
+        }
+    ]
+}
