@@ -22,3 +22,22 @@
         font-size: 17px
         line-height: 24px
         font-weight: bold
+    &__link
+        transition: 0.5s
+        &_facebook
+            &:hover
+                transform: scale(1.6) rotate(90deg)
+                // filter: drop-shadow(0 0 15px $main-white)
+                svg path 
+                    fill: #3b5998
+        &_instagram
+            &:hover
+                transform: scale(1.6) rotate(90deg)
+                filter: drop-shadow(0 0 10px $main-white)
+                svg path 
+                    fill: url(#GradInst)
+        &_github
+            &:hover
+                transform: scale(1.6) rotate(90deg)
+                filter: drop-shadow(0 0 10px $main-white)
+                    
