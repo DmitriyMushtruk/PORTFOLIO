@@ -73,13 +73,34 @@
             text-decoration: none
     &__social
         position: absolute
-        bottom: 50%
+        bottom: 30%
         left: 50%
         transform: translateX(-50%)
-        width: 90px
+        width: 135px
         display: flex
         justify-content: space-between
         align-items: center
+        &_github
+            transition: .6s
+            &:hover
+                transform: scale(1.4) rotate(360deg)
+                //filter: drop-shadow(0 0 10px $main-white)
+                svg path 
+                    fill: #000
+        &_facebook
+            transition: .6s
+            &:hover
+                transform: scale(1.4) rotate(360deg)
+                //filter: drop-shadow(0 0 10px $main-dark)
+                svg path 
+                    fill: #3b5998
+        &_instagram
+            transition: .6s
+            &:hover
+                transform: scale(1.4) rotate(360deg)
+                //filter: drop-shadow(0 0 10px $main-white)
+                svg path 
+                    fill: url(#GradInst)
     &__overlay
         position: fixed
         top: 0

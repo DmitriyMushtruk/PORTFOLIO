@@ -5,9 +5,20 @@
   padding: 0;
 }
 
+body {
+  background-color: #393E46;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.divider {
+  width: 60px;
+  height: 0px;
+  border: 3px solid #FD7013;
+  margin-top: 25px;
 }
 
 .promo {
@@ -68,6 +79,9 @@
   line-height: 24px;
   color: #EEEEEE;
 }
+.tittle__fz36 {
+  font-size: 36px;
+}
 .tittle__fz48px {
   font-size: 48px;
 }
@@ -113,20 +127,20 @@
   transition: 0.5s;
 }
 .sidepanel__link_facebook:hover {
-  transform: scale(1.6) rotate(90deg);
+  transform: scale(1.5) rotate(90deg);
 }
 .sidepanel__link_facebook:hover svg path {
   fill: #3b5998;
 }
 .sidepanel__link_instagram:hover {
-  transform: scale(1.6) rotate(90deg);
+  transform: scale(1.3) rotate(90deg);
   filter: drop-shadow(0 0 10px #EEEEEE);
 }
 .sidepanel__link_instagram:hover svg path {
   fill: url(#GradInst);
 }
 .sidepanel__link_github:hover {
-  transform: scale(1.6) rotate(90deg);
+  transform: scale(1.3) rotate(90deg);
   filter: drop-shadow(0 0 10px #EEEEEE);
 }
 
@@ -217,13 +231,40 @@
 }
 .menu__social {
   position: absolute;
-  bottom: 50%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
-  width: 90px;
+  width: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.menu__social_github {
+  transition: 0.6s;
+}
+.menu__social_github:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+.menu__social_github:hover svg path {
+  fill: #000;
+}
+.menu__social_facebook {
+  transition: 0.6s;
+}
+.menu__social_facebook:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+.menu__social_facebook:hover svg path {
+  fill: #3b5998;
+}
+.menu__social_instagram {
+  transition: 0.6s;
+}
+.menu__social_instagram:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+.menu__social_instagram:hover svg path {
+  fill: url(#GradInst);
 }
 .menu__overlay {
   position: fixed;
@@ -233,4 +274,84 @@
   height: 100%;
   background-color: #222831;
   opacity: 0.75;
+}
+
+.aboutMe {
+  padding-top: 120px;
+}
+.aboutMe__photo {
+  grid-row: 1/3;
+}
+.aboutMe__photo img {
+  width: 100%;
+}
+.aboutMe__wrapper {
+  display: grid;
+  grid-template-columns: 400px 670px;
+  grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+  grid-auto-rows: minmax(245px, auto);
+  column-gap: 70px;
+  row-gap: 40px;
+}
+.aboutMe__tittle {
+  position: relative;
+  padding-left: 12px;
+}
+.aboutMe__tittle:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #FD7013;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.aboutMe__descr {
+  padding-top: 6px;
+}
+.aboutMe__descr .divider {
+  margin-top: 0;
+}
+.aboutMe__text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #EEEEEE;
+}
+.aboutMe__skills {
+  display: grid;
+  grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+  grid-auto-rows: 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+.aboutMe__skills-item {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  column-gap: 20px;
+}
+.aboutMe__skills-circle {
+  position: relative;
+  padding: 15px 0 0 15px;
+}
+.aboutMe__skills-circle:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #FD7013;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.aboutMe__skills-circle::before {
+  top: 0;
+}
+.aboutMe__skills-text {
+  font-size: 12px;
+  line-height: 18px;
+  color: #EEEEEE;
 }/*# sourceMappingURL=style.css.map */
