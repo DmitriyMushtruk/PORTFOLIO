@@ -1,0 +1,79 @@
+.resume
+    padding-top: 120px
+    &__tittle
+        position: relative
+        text-align: center
+        @include before_circle
+        &::before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__subtittle
+        text-align: center
+    &__wrapper
+        padding: 60px 65px 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 135px
+    &__col
+        &-tittle
+            position: relative
+            padding-left: 35px
+            &::before
+                content: ''
+                position: absolute
+                width: 15px
+                height: 15px
+                background: $main-color
+                border-radius: 100%
+                left: -7px
+                top: 50%
+                transform: translateY(-50%)
+        ul
+            list-style-type: none
+            li
+                position: relative
+                &::after
+                    content: ''
+                    width: 1px
+                    height: calc(100% + 8px)
+                    position: absolute
+                    top: -8px
+                    left: 0
+                    background-color: $main-white
+    &__item
+        position: relative
+        &::before
+            content: ''
+            height: 1px
+            width: 45px
+            position: absolute
+            background-color: $main-white
+            top: 43px
+        &_head
+            position: relative
+            padding: 20px 0 0 100px
+        &_body
+            padding-left: 43px
+            margin-top: 12px
+            font-size: 12px
+            line-height: 18px
+            color: $main-white
+        &_icon
+            position: absolute
+            top: 25px
+            left: 45px
+            @include before_circle
+            svg
+                position: absolute
+                left: 17px
+                top: 14px
+        &-location
+            font-size: 14px
+            line-height: 18px
+            color: $main-white
+
+
+
+
+         
