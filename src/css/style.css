@@ -636,4 +636,55 @@ body {
 }
 .portfolio__item img:hover {
   transform: scale(1.05);
+}
+
+.contacts {
+  padding: 120px 0 70px 0;
+}
+.contacts__tittle {
+  position: relative;
+  text-align: center;
+}
+.contacts__tittle:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #FD7013;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.contacts__tittle::before {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contacts__subtittle {
+  text-align: center;
+}
+.contacts__content {
+  display: flex;
+  justify-content: center;
+}
+.contacts__content_link {
+  padding-top: 30px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.contacts__content svg {
+  padding: 0 20px 0 20px;
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s;
+}
+.contacts__content svg:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  height: 80px;
+  background-color: #222831;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
