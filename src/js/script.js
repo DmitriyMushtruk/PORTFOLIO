@@ -1,15 +1,41 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close')
+      menu = document.querySelector('.menu')
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active')
+    hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open"),
+    menu.classList.toggle("active")
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active')
-});
+// const menu = document.querySelector('.menu')
 
+// menu.addEventListener("click", () => {
+//     menu.classList.toggle("active")
+// });
+
+
+// $(document).ready(function(){
+// 	$('.hamburger').click(function(){
+// 		$(this).toggleClass('open');
+// 	});
+// });
+
+// const hamburger = document.querySelector('.hamburger'),
+//       menu = document.querySelector('.menu'),
+//       closeElem = document.querySelector('.menu__close')
+
+
+// hamburger.addEventListener('click', () => {
+//     hamburger.classList.add('open');
+//     menu.classList.add('active')
+// });
+
+// // hamburger.addEventListener('click', () => {
+// //     menu.classList.add('active')
+// // });
+
+// closeElem.addEventListener('click', () => {
+//     menu.classList.remove('active')
+// });
 
 const counters = document.querySelectorAll('.experience__ratings-counter'),
       lines = document.querySelectorAll('.experience__ratings-line span');

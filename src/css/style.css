@@ -151,66 +151,129 @@ body {
 }
 
 .hamburger {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  height: 21px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  height: 45px;
+  width: 45px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
+  z-index: 15;
 }
 .hamburger span {
-  display: block;
-  width: 30px;
-  height: 3px;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #3282e4;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   background: #EEEEEE;
 }
-.hamburger span.long {
-  width: 36px;
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+.hamburger span:nth-child(2) {
+  top: 18px;
+}
+.hamburger span:nth-child(3) {
+  top: 36px;
+}
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.hamburger.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .menu {
   position: fixed;
-  top: 0;
-  left: -100%;
+  top: -100px;
   width: 100%;
-  height: 100vh;
+  height: 100px;
   z-index: 10;
   visibility: hidden;
   opacity: 0;
   transition: all 0.6s;
 }
 .menu.active {
-  left: 0;
+  top: 0;
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
+}
+.menu__github {
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 0;
+  border-top: 72px solid #222831;
+  border-right: 72px solid transparent;
+}
+.menu__github a {
+  position: absolute;
+  top: -55px;
+  left: 20px;
+  transition: 0.5s;
+}
+.menu__github a:hover {
+  transform: scale(1.2);
 }
 .menu__block {
   position: relative;
-  width: 345px;
+  width: 100%;
   background-color: #FD7013;
-  height: 100%;
-  padding-top: 140px;
-  padding-left: 40px;
+  padding-top: 20px;
   transition: all 0.6s;
   z-index: 10;
 }
 .menu__close {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 70px;
   cursor: pointer;
 }
 .menu__list {
+  display: flex;
+  justify-content: start;
   list-style-type: none;
-  padding-left: 35px;
+  padding-left: 135px;
 }
 .menu__link {
+  padding-right: 70px;
   position: relative;
+  max-width: 250px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
   margin-bottom: 15px;
   transition: 0.6s;
@@ -218,10 +281,10 @@ body {
 .menu__link::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -25px;
   top: 9px;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border: 2px solid #EEEEEE;
   border-radius: 100%;
   transition: 0.5s;
@@ -230,6 +293,7 @@ body {
   background-color: #EEEEEE;
   transform: scale(1.5);
   opacity: 0.9;
+  cursor: pointer;
 }
 .menu__link a {
   color: #EEEEEE;
@@ -237,7 +301,7 @@ body {
 }
 .menu__social {
   position: absolute;
-  bottom: 30%;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 135px;
@@ -271,15 +335,6 @@ body {
 }
 .menu__social_instagram:hover svg path {
   fill: url(#GradInst);
-}
-.menu__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #222831;
-  opacity: 0.75;
 }
 
 .aboutMe {
