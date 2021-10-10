@@ -154,8 +154,8 @@ body {
   position: fixed;
   top: 15px;
   right: 15px;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -164,16 +164,12 @@ body {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
   cursor: pointer;
   z-index: 15;
 }
 .hamburger span {
   position: absolute;
-  height: 7px;
+  height: 5px;
   width: 100%;
   background: #3282e4;
   opacity: 1;
@@ -189,13 +185,13 @@ body {
   background: #EEEEEE;
 }
 .hamburger span:nth-child(1) {
-  top: 0px;
+  top: 5px;
 }
 .hamburger span:nth-child(2) {
-  top: 18px;
+  top: 17px;
 }
 .hamburger span:nth-child(3) {
-  top: 36px;
+  top: 29px;
 }
 .hamburger.open span:nth-child(1) {
   top: 18px;
@@ -248,6 +244,41 @@ body {
 .menu__github a:hover {
   transform: scale(1.2);
 }
+.menu__cv {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: 150px;
+  height: 72px;
+  background: #222831;
+  transform: skew(-45deg);
+}
+.menu__cv a {
+  position: absolute;
+  left: 20px;
+  transform: skew(45deg);
+  text-align: center;
+  top: 15px;
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 30px;
+  font-weight: bold;
+}
+.menu__cv_icon {
+  position: relative;
+  top: -50px;
+  left: 25px;
+}
+.menu__cv_icon_arrow {
+  position: absolute;
+  left: 37px;
+  top: 5px;
+  width: 20px;
+  height: 50px;
+}
+.menu__cv_icon_file {
+  position: absolute;
+}
 .menu__block {
   position: relative;
   width: 100%;
@@ -266,7 +297,7 @@ body {
   display: flex;
   justify-content: start;
   list-style-type: none;
-  padding-left: 135px;
+  padding-left: 190px;
 }
 .menu__link {
   padding-right: 70px;

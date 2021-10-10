@@ -2,8 +2,8 @@
     position: fixed
     top: 15px
     right: 15px
-    height: 45px
-    width: 45px
+    height: 40px
+    width: 40px
     -webkit-transform: rotate(0deg)
     -moz-transform: rotate(0deg)
     -o-transform: rotate(0deg)
@@ -12,15 +12,15 @@
     -moz-transition: .5s ease-in-out
     -o-transition: .5s ease-in-out
     transition: .5s ease-in-out
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: flex-end
+    // display: flex
+    // flex-direction: column
+    // justify-content: space-between
+    // align-items: flex-end
     cursor: pointer
     z-index: 15
     span
         position: absolute
-        height: 7px
+        height: 5px
         width: 100%
         background: #3282e4
         opacity: 1
@@ -35,13 +35,11 @@
         transition: .25s ease-in-out
         background: $main-white
         &:nth-child(1)
-            top: 0px
+            top: 5px
         &:nth-child(2)
-            top: 18px
+            top: 17px
         &:nth-child(3)
-            top: 36px
-        // &:hover
-        //     transform: translateY(20%)
+            top: 29px
     &.open
         span
             &:nth-child(1)
@@ -86,6 +84,36 @@
             transition: .5s
             &:hover
                 transform: scale(1.2)
+    &__cv
+        position: absolute
+        top: 0
+        left: 75%
+        width: 150px
+        height: 72px
+        background: $main-dark
+        transform: skew(-45deg)
+        a
+            position: absolute
+            left: 20px
+            transform: skew(45deg)
+            text-align: center
+            top: 15px
+            text-decoration: none
+            color: $main-white
+            font-size: 30px
+            font-weight: bold
+        &_icon
+            position: relative
+            top: -50px
+            left: 25px
+            &_arrow
+                position: absolute
+                left: 37px
+                top: 5px
+                width: 20px
+                height: 50px
+            &_file
+                position: absolute
     &__block
         position: relative
         width: 100%
@@ -102,7 +130,7 @@
         display: flex
         justify-content: start
         list-style-type: none
-        padding-left: 135px
+        padding-left: 190px
     &__link
         padding-right: 70px
         position: relative
@@ -161,6 +189,7 @@
                 //filter: drop-shadow(0 0 10px $main-white)
                 svg path 
                     fill: url(#GradInst)
+
     // &__overlay
     //     position: fixed
     //     top: 0
