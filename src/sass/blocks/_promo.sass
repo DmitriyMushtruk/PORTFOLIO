@@ -1,23 +1,38 @@
 .promo
-    min-height: 75vh
+    min-height: 30vh
     position: relative
     background: rgba(0, 0, 0, .45) url('../img/keyboard_bg.jpg') no-repeat 50%/cover
     background-blend-mode: darken // add dark-theme to background
-    padding-top: 205px
+    padding-top: 150px
+    padding-bottom: 60px
     &__tittle
-        width: 530px
-        margin-top: 10px
+        text-align: center
+        width: 100%
+        margin-top: 30px
+        span
+            font-family: 'Akronim', cursive
+            font-size: 36px
+            opacity: .8
     &__subtittle
+        text-align: center
         position: relative
-        @include before_circle
         z-index: 2
-        padding-left: 10px
+        @include before_circle_big
+        &::before
+                top: -3px
+                left: 34%
+        span
+            font-family: 'Akronim', cursive
+            font-size: 28px
+            opacity: .8
+            padding-right: 20px
+        
     &__btns
         margin-top: 25px
         display: flex
-        width: 250px
+        width: 100%
         align-items: center
-        justify-content: space-between
+        justify-content: center
     &__link
         color: #EEEEEE
         text-decoration: none
