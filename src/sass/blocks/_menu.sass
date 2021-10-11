@@ -87,7 +87,7 @@
     &__cv
         position: absolute
         top: 0
-        left: 75%
+        left: 65%
         width: 150px
         height: 72px
         background: $main-dark
@@ -114,6 +114,27 @@
                 height: 50px
             &_file
                 position: absolute
+    &__lang
+        position: absolute
+        left: 78%
+        top: 0
+        height: 72px
+        width: 250px
+        background: $main-dark
+        transform: skew(-45deg)
+        a
+            padding-left: 33px
+            text-decoration: none
+            img
+                margin-top: 20px
+                transform: skew(45deg)
+                width: 35px
+                height: 35px
+                border-radius: 100px
+                transition: .5s
+                &:hover
+                        transform: scale(1.2) skew(45deg)
+                
     &__block
         position: relative
         width: 100%
@@ -130,7 +151,7 @@
         display: flex
         justify-content: start
         list-style-type: none
-        padding-left: 190px
+        padding-left: 130px
     &__link
         padding-right: 70px
         position: relative

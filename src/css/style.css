@@ -40,6 +40,7 @@ body {
   font-family: "Akronim", cursive;
   font-size: 36px;
   opacity: 0.8;
+  color: #FD7013;
 }
 .promo__subtittle {
   text-align: center;
@@ -66,6 +67,7 @@ body {
   font-size: 28px;
   opacity: 0.8;
   padding-right: 20px;
+  color: #FD7013;
 }
 .promo__btns {
   margin-top: 25px;
@@ -265,7 +267,7 @@ body {
 .menu__cv {
   position: absolute;
   top: 0;
-  left: 75%;
+  left: 65%;
   width: 150px;
   height: 72px;
   background: #222831;
@@ -297,6 +299,30 @@ body {
 .menu__cv_icon_file {
   position: absolute;
 }
+.menu__lang {
+  position: absolute;
+  left: 78%;
+  top: 0;
+  height: 72px;
+  width: 250px;
+  background: #222831;
+  transform: skew(-45deg);
+}
+.menu__lang a {
+  padding-left: 33px;
+  text-decoration: none;
+}
+.menu__lang a img {
+  margin-top: 20px;
+  transform: skew(45deg);
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.menu__lang a img:hover {
+  transform: scale(1.2) skew(45deg);
+}
 .menu__block {
   position: relative;
   width: 100%;
@@ -315,7 +341,7 @@ body {
   display: flex;
   justify-content: start;
   list-style-type: none;
-  padding-left: 190px;
+  padding-left: 130px;
 }
 .menu__link {
   padding-right: 70px;
