@@ -30,6 +30,7 @@ body {
   background-blend-mode: darken;
   padding-top: 150px;
   padding-bottom: 60px;
+  box-shadow: 0 0 80px 140px #393E46 inset;
 }
 .promo__tittle {
   text-align: center;
