@@ -43,3 +43,17 @@ const counters = document.querySelectorAll('.experience__ratings-counter'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+$(document).ready(function(){
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1200) {
+
+            $('.pageup').fadeIn();
+
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+});

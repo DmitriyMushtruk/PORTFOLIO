@@ -173,7 +173,8 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
+        
 
         <div class="hamburger open">
             <span></span>
@@ -182,7 +183,7 @@
         </div>
 
         <div class="container">
-            <div class="tittle tittle__fz36 promo__subtittle wow animate__animated animate__bounceInDown data-wow-duration="0.02s" data-wow-delay="0.1s""><span>&lt;name&gt;</span> Дмитрий Муштрук <span>&lt;/name&gt;</span></div>
+            <div class="tittle tittle__fz36 promo__subtittle wow animate__animated animate__bounceInDown data-wow-duration="0.02s" data-wow-delay="0.1s""><span>&lt;div class="name"&gt;</span> Дмитрий Муштрук <span>&lt;/div&gt;</span></div>
             <h1 class="tittle tittle__fz48 promo__tittle"><span>&lt;h1&gt;</span> FrontEnd-разработчик <span>&lt;/h1&gt;</span> </h1>
             <!-- <div class="promo__btns wow animate__animated animate__backInUp data-wow-duration="0.02s" data-wow-delay="0.3" data-wow-offset="10"">
                 <a href="#" class="promo__link btn">Портфолио</a>
@@ -832,8 +833,17 @@
         </div>
     </section>
 
-    <footer></footer>
+    <div class="pageup">
+        <a href="#up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+        </a>
+    </div>
 
+    <footer></footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
