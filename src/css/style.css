@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -825,7 +826,7 @@ body {
 }
 .footer__content {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 .footer__content span {
   color: #EEEEEE;
@@ -868,4 +869,261 @@ body {
 }
 .pageup svg path {
   fill: #EEEEEE;
+}
+
+.tittle__glitch, .subtittle__glitch {
+  text-align: right;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+.tittle__glitch h1, .subtittle__glitch h1 {
+  padding-right: 80px;
+  color: #fff;
+  font-size: 64px;
+  letter-spacing: 2.5px;
+  margin: 0;
+  line-height: 0;
+  animation: glitch1 2.5s infinite;
+}
+.tittle__glitch h1:nth-child(2), .subtittle__glitch h1:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+.tittle__glitch h1:nth-child(3), .subtittle__glitch h1:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+.tittle__glitch h2, .subtittle__glitch h2 {
+  padding-right: 80px;
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 2.5px;
+  margin: 0;
+  line-height: 0;
+  animation: glitch1 2.5s infinite;
+}
+.tittle__glitch h2:nth-child(2), .subtittle__glitch h2:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+.tittle__glitch h2:nth-child(3), .subtittle__glitch h2:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+.tittle__glitch h2:before, .subtittle__glitch h2:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #FD7013;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.tittle__glitch h2::before, .subtittle__glitch h2::before {
+  top: -33px;
+  left: 573px;
+}
+
+.subtittle__glitch {
+  position: relative;
+}
+
+.subtittle__animate {
+  position: relative;
+}
+.subtittle__animate .tagline {
+  position: absolute;
+  left: 240px;
+  top: -15px;
+  font-size: 36px;
+  font-family: "Press Start 2P", cursive;
+  color: #FD7013;
+}
+.subtittle__animate .tagline1 {
+  position: absolute;
+  left: 25px;
+  top: 60px;
+  font-size: 36px;
+  font-family: "Press Start 2P", cursive;
+  color: #FD7013;
+}
+@property {
+  .subtittle__animate .tagline1 {
+    startDelay: 5000;
+  }
+}
+
+/*Keyframes */
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+.animation__background {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  background: #2d3436;
 }/*# sourceMappingURL=style.css.map */
